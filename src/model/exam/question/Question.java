@@ -1,8 +1,8 @@
-package model.exam.session.question;
+package model.exam.question;
 
 public class Question {
-    private String question;
-    private String reponse;
+    private final String question;
+    private final String reponse;
 
     public Question(String question, String reponse) {
         this.question = question;
