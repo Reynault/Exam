@@ -1,13 +1,16 @@
 package model.exam.question.factory;
 
-import model.exam.difficulty.Difficulty;
 import model.exam.question.Question;
 
 public abstract class QuestionFactory {
-    private Difficulty difficulty;
+    int averageLength;
 
-    public QuestionFactory(Difficulty difficulty) {
-        this.difficulty = difficulty;
+    public QuestionFactory() {
+        averageLength = 20;
+    }
+
+    public void setAverageLength(int averageLength) {
+        this.averageLength = averageLength;
     }
 
     public abstract Question createQuestion();

@@ -28,8 +28,8 @@ public class StandardPrinting implements PrintingStrategy{
             questions = sessions.get(i).getQuestions();
             for(int j = 0; j < questions.size(); j++){
                 q = questions.get(j);
-                sb.append("Test "+(j+1)+": "+q.getQuestion()+"\n");
-                sb.append("  Expected : "+q.getReponse()+"\n");
+                sb.append("  Test "+(j+1)+": "+q.getQuestion()+"\n");
+                sb.append("      Expected : "+q.getReponse()+"\n");
             }
             sb.append("\n");
         }
@@ -40,11 +40,11 @@ public class StandardPrinting implements PrintingStrategy{
         sessions = theorical.getSessions();
         for(int i = 0; i < sessions.size(); i++){
             questions = sessions.get(i).getQuestions();
-            sb.append("Questions session "+(i+1)+":\n");
+            sb.append("  Questions session "+(i+1)+":\n");
             for(int j = 0; j < questions.size(); j++){
                 q = questions.get(j);
-                sb.append("Question "+(j+1)+": "+q.getQuestion()+"\n");
-                sb.append("  "+q.getReponse()+"\n");
+                sb.append("    Question "+(j+1)+": "+q.getQuestion()+"\n");
+                sb.append("      "+q.getReponse()+"\n");
             }
             sb.append("\n");
         }

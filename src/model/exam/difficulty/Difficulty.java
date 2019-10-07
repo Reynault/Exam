@@ -1,4 +1,6 @@
 package model.exam.difficulty;
 
-public abstract class Difficulty {
+public interface Difficulty {
+    int nbQuestion();
+    int questionLength();
 }
